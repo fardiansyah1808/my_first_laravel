@@ -6,8 +6,21 @@ use Illuminate\Http\Request;
 
 class PegawaiController extends Controller
 {
-    public function index()
+    public function index($name)
     {
-        return "Hallo ini adalah method index, dalam controller PegawaiController. - www.fardiansyah.id";
+        return ucfirst($name);
+    }
+
+    public function formulir()
+    {
+        return view("formulir");
+    }
+
+    public function proses(Request $request)
+    {
+        $name = $request->input("name");
+        $address = $request->input("address");
+        $number = $request->input("phone_number");
+        return "Name : " . $name . "<br> Address : " . $address . "<br> Phone Number : " . $number;
     }
 }
