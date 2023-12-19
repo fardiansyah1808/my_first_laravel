@@ -17,15 +17,15 @@ use App\Http\Controllers\BlogController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('selamat_datang');
-// });
+Route::get('/', function () {
+    return view('selamat_datang');
+});
 
 Route::get('hello ', function () {
     return "Hello, Welcome to My First Laravel www.fardiansyah.id";
 });
 
-Route::get("/", [BlogController::class, 'index']);
+Route::get("blog", [BlogController::class, 'index']);
 
 Route::get("blog/about-us", [BlogController::class, 'about_us']);
 

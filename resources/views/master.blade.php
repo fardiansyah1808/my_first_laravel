@@ -11,7 +11,7 @@
 
         <h2>Blog MalasNgoding</h2>
         <nav>
-            <a href="/">HOME</a>
+            <a href="/blog">HOME</a>
             |
             <a href="/blog/about-us">TENTANG</a>
             |
